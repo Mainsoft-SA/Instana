@@ -1,5 +1,4 @@
-Cómo instalar cURL en Windows
-***
+# **Cómo instalar cURL en Windows**
 
 1. En Windows, crea un directorio llamado curl en la unidad C:
 ![image](https://github.com/Mainsoft-SA/Instana/assets/170142238/ae326fc1-a1ad-4b5d-8ae4-3e83713eb3f3)
