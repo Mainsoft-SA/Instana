@@ -12,6 +12,8 @@
 3. Requisitos
    - Acceso admin a las cuentas de AWS
    - Contar con recursos a monitorear en ambas cuentas, para este ejemplo se utilizaron lambdas (https://github.com/juan-conde-21/aws_lambda)
+   - Contar con el monitoreo del ec2
+   - Contar con la instrumentación de los lambdas
    
 4. Desplegar agente en la cuenta principal (https://github.com/juan-conde-21/Instana-sensor-AWS-EC2)
 
