@@ -69,7 +69,7 @@
    ![image](https://github.com/user-attachments/assets/d71967ed-3302-42ff-84f8-9ac91630eb06)
 
 
-
+Referencia: https://www.ibm.com/docs/en/instana-observability/current?topic=agents-configuring-host#setting-up-an-agent-proxy
 
  
 
