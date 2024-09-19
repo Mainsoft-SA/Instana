@@ -9,15 +9,16 @@
 1. Proxy Squid
 
    Instalar Squid
-```
+   ```
    sudo apt install squid
-```
+   ```
+   
    Configurar Squid
-```
+   ```
    nano /etc/squid/squid.conf
-```
+   ```
 
-![image](https://github.com/user-attachments/assets/c5dc3b60-1561-40d4-a632-2a95a557bfe0)
+   ![image](https://github.com/user-attachments/assets/c5dc3b60-1561-40d4-a632-2a95a557bfe0)
 
 
 2. Instalación/configuración de agente instana
