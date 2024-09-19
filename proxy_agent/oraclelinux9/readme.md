@@ -12,7 +12,7 @@
 2. Transferir los paquetes descargados al servidor Squid Proxy (/home/user/squid_install/), se debe tener habilitado el gestor de paquetes dnf.
 
    En el siguiente link se lista los paquetes descargados en un ambiente de pruebas:
-   https://github.com/Mainsoft-SA/Instana/tree/main/proxy_agent/package_squid/oraclelinux9
+   https://github.com/Mainsoft-SA/Instana/tree/main/proxy_agent/oraclelinux9/rpm
 
    Nota: Se sugiere la descarga de los paquetes como se detalla en el punto 1.
 
