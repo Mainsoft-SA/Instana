@@ -14,7 +14,7 @@
    En el siguiente link se lista los paquetes descargados en un ambiente de pruebas:
    https://github.com/Mainsoft-SA/Instana/tree/main/proxy_agent/package_squid/oraclelinux9
 
-   Nota: Se sugiere la descarga de los paquetes como se detalla en el punto 1 en caso se presente algún inconveniente.
+   Nota: Se sugiere la descarga de los paquetes como se detalla en el punto 1.
 
 3. Instalación de los paquetes en el servidor Squid Proxy, usando dnf o rpm:
 
