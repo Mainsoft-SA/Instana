@@ -38,6 +38,7 @@
    ![image](https://github.com/user-attachments/assets/b2408763-d000-4050-afd1-0d783260974a)
 
 6. Continuar la configuración del Squid detallado en el siguiente link:
+   
    https://github.com/Mainsoft-SA/Instana/blob/main/proxy_agent/readme.md
 
    
