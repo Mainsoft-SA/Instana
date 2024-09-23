@@ -17,11 +17,11 @@
    ```
    nano /etc/squid/squid.conf
    ```
+   ![image](https://github.com/user-attachments/assets/bb983382-4f2c-415a-8349-e978931483f1)
 
-   ![image](https://github.com/user-attachments/assets/c5dc3b60-1561-40d4-a632-2a95a557bfe0)
 
 
-2. Instalación/configuración de agente instana
+3. Instalación/configuración de agente instana
 
    Descargar y copiar package
    
