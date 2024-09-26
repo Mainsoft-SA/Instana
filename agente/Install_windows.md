@@ -39,6 +39,19 @@ En caso se tenga un entorno con un proxy, realizar la siguiente configuración:
 https://github.com/Mainsoft-SA/Instana/blob/main/proxy_agent/readme.md#3-configuraci%C3%B3n-de-proxy-en-agente-instana
 
 Luego validar en la consola de Instana:
+![image](https://github.com/user-attachments/assets/be53e675-3c89-42fc-8ddc-6f543ab1b8d4)
 
 ![image](https://github.com/user-attachments/assets/1a980a1e-c921-4f17-9674-0dd02f86203c)
 
+
+## Iniciar y detener agente
+
+Iniciar servicio
+```
+net start instana-agent-service
+```
+
+Detener servicio
+```
+net stop instana-agent-service
+```
