@@ -38,7 +38,9 @@ Se mostrara la siguiente ventana, donde:
 ```
 telnet ingress-orange-saas.instana.io 443
 curl -v telnet://ingress-orange-saas.instana.io:443
+curl -v -x proxy:port -U "username:password" telnet://ingress-orange-saas.instana.io:443
 ```
+
 
 En la ubicación donde se descargo o copio el instalador, ejecutar la linea de comando:
 
