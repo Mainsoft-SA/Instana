@@ -32,7 +32,7 @@ Se mostrara la siguiente ventana, donde:
 > [!IMPORTANT]
 >**Extraer el link y la linea de comando de su tenant de Instana**
 
-![image](https://github.com/user-attachments/assets/f62f0d3b-a329-43d8-ba1a-9636f23bc487)
+![image](https://github.com/user-attachments/assets/c325cb5d-5a7d-4708-8257-2714a858a0ca)
 
 > [!TIP]
 >**Verificar conectividad, usando la URL de la linea de comando**
@@ -42,6 +42,9 @@ curl -v telnet://ingress-orange-saas.instana.io:443
 ```
 
 En la ubicación donde se descargo o copio el instalador, ejecutar la linea de comando:
+
+> [!TIP]
+>**Ejecutar comando con permisos de administrador**
 
 ![image](https://github.com/user-attachments/assets/a2fdcfdd-7deb-4538-ad71-939acfe2eeea)
 
