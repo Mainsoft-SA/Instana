@@ -11,7 +11,9 @@ Instana soporta los siguientes sistemas operativos:
 - Windows 8.1
 - Windows 8
 
-Nota: Confirmar los sistemas operativos soportado en la documentación oficial (https://www.ibm.com/docs/en/instana-observability/current?topic=agents-installing-windows#supported-operating-systems-and-platform-architectures)
+Nota: Confirmar los sistemas operativos soportado en la [documentación oficial] (https://www.ibm.com/docs/en/instana-observability/current?topic=agents-installing-windows#supported-operating-systems-and-platform-architectures).
+
+This site was built using [GitHub Pages](https://pages.github.com/).
 
 En la pantalla de inicio del tenant de Instana, hacer clic en "**Deploy agent**"
 
@@ -32,7 +34,13 @@ Se mostrara la siguiente ventana, donde:
 
 ![image](https://github.com/user-attachments/assets/f62f0d3b-a329-43d8-ba1a-9636f23bc487)
 
-En la ubicación donde se descargo o copio el instalador, ejecutar la linea de comando mencionada en el paso anterior:
+> [!TIP]
+>**Verificar conectividad, usando la URL de la linea de comando**
+```
+telnet ingress-orange-saas.instana.io 443
+```
+
+En la ubicación donde se descargo o copio el instalador, ejecutar la linea de comando:
 
 ![image](https://github.com/user-attachments/assets/a2fdcfdd-7deb-4538-ad71-939acfe2eeea)
 
@@ -41,7 +49,7 @@ https://github.com/Mainsoft-SA/Instana/blob/main/proxy_agent/readme.md#3-configu
 
 Luego validar en la consola de Instana:
 
-![image](https://github.com/user-attachments/assets/be53e675-3c89-42fc-8ddc-6f543ab1b8d4)
+![image](https://github.com/user-attachments/assets/f9eba09c-1532-41f5-97fe-bd584b871949)
 
 ![image](https://github.com/user-attachments/assets/1a980a1e-c921-4f17-9674-0dd02f86203c)
 
@@ -59,3 +67,7 @@ Detener servicio
 ```
 net stop instana-agent-service
 ```
+
+## Verificar conectividad
+
+
