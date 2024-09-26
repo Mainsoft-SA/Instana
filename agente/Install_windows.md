@@ -13,13 +13,25 @@ Instana soporta los siguientes sistemas operativos:
 
 Nota: Confirmar los sistemas operativos soportado en la documentación oficial (https://www.ibm.com/docs/en/instana-observability/current?topic=agents-installing-windows#supported-operating-systems-and-platform-architectures)
 
+En la pantalla de inicio del tenant de Instana, hacer clic en "Deploy agent"
+
 ![image](https://github.com/user-attachments/assets/8a0c2b7b-2956-44ee-aa79-81195d4c3a5b)
+
+Filtrar bajo la palabra Windows
 
 ![image](https://github.com/user-attachments/assets/59b45a62-2299-4c76-93dc-0fe009a42e47)
 
+Se mostrara la siguiente ventana, donde:
 
-1 - Descargar el instalador
-2 - Comando desde a ejecutar
+1 - Link de descargar el instalador del agente de Instana
+
+2 - Linea de comando para la instalación desatendida del agente de Instana
+
 ![image](https://github.com/user-attachments/assets/f62f0d3b-a329-43d8-ba1a-9636f23bc487)
 
-En caso se tenga un entorno con un proxy, revisar https://github.com/Mainsoft-SA/Instana/blob/main/proxy_agent/readme.md#3-configuraci%C3%B3n-de-proxy-en-agente-instana
+En la ubicación donde se descargo o copio el instalador, ejecutar el comando del punto 2
+
+
+
+En caso se tenga un entorno con un proxy, continuar la siguiente configuración:
+https://github.com/Mainsoft-SA/Instana/blob/main/proxy_agent/readme.md#3-configuraci%C3%B3n-de-proxy-en-agente-instana
