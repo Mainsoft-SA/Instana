@@ -27,12 +27,12 @@ Se mostrara la siguiente ventana, donde:
 
 2 - Linea de comando para la instalación desatendida del agente de Instana
 
+**Importante: Extraer el link y la linea de comando de su tenant de Instana**
+
 ![image](https://github.com/user-attachments/assets/f62f0d3b-a329-43d8-ba1a-9636f23bc487)
 
-En la ubicación donde se descargo o copio el instalador, ejecutar el comando del punto 2
-```
-instana-agent-windows-64bit.exe INSTANA_AGENT_ENDPOINT=ingress-orange-saas.instana.io INSTANA_AGENT_ENDPOINT_PORT=443 INSTANA_AGENT_KEY=O_xPXPnaToa9ZpkiPG0Elg INSTANA_DOWNLOAD_KEY=O_xPXPnaToa9ZpkiPG0Elg /quiet
-```
+En la ubicación donde se descargo o copio el instalador, ejecutar la linea de comando mencionada en el paso anterior:
+
 ![image](https://github.com/user-attachments/assets/a2fdcfdd-7deb-4538-ad71-939acfe2eeea)
 
 En caso se tenga un entorno con un proxy, realizar la siguiente configuración:
