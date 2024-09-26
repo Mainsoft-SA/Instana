@@ -68,6 +68,4 @@ Detener servicio
 net stop instana-agent-service
 ```
 
-## Verificar conectividad
-
 
