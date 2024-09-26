@@ -38,6 +38,7 @@ Se mostrara la siguiente ventana, donde:
 >**Verificar conectividad, usando la URL de la linea de comando**
 ```
 telnet ingress-orange-saas.instana.io 443
+curl -v telnet://ingress-orange-saas.instana.io:443
 ```
 
 En la ubicación donde se descargo o copio el instalador, ejecutar la linea de comando:
