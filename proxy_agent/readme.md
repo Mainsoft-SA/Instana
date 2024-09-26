@@ -6,7 +6,7 @@
    SO: Ubuntu 24
 
 
-1. Proxy Squid
+## 1. Proxy Squid
 
    Instalar Squid
    ```
@@ -17,11 +17,14 @@
    ```
    nano /etc/squid/squid.conf
    ```
+
+   Actualizar por la red interna y cambiar las URLs asignadas a su tenant
+
    ![image](https://github.com/user-attachments/assets/bb983382-4f2c-415a-8349-e978931483f1)
 
 
 
-3. Instalación/configuración de agente instana
+## 2. Instalación de agente instana
 
    Descargar y copiar package
    
@@ -38,23 +41,29 @@
    dpkg -i instana-agent-dynamic.amd64.deb
    ```
 
-   Configurar archivo mvn-settings.xml
-   ```
-   /opt/instana/agent/etc/mvn-settings.xml
-   ```
+## 3. Configuración de proxy en agente Instana
+
+   Buscar el key
    
-   Colocar el key
-   
+   ![image](https://github.com/user-attachments/assets/2647ffa4-eeb8-4d35-b0f8-895ec840834d)
+
+   Configurar archivo mvn-settings.xml y colocar el key
+   ```
+   Linux: /opt/instana/agent/etc/mvn-settings.xml
+   Windows: C:\Program Files\Instana\instana-agent\etc\mvn-settings.xml
+   ```
+    
    ![image](https://github.com/user-attachments/assets/4dd51455-a327-43ea-af30-f5b2c18f6893)
 
-   Colocar datos del proxy
+   Lineas abajo colocar datos del proxy
    
    ![image](https://github.com/user-attachments/assets/1ca7a6d2-6ff9-4b94-99cd-342b1ce46a0d)
 
-   Configurar archivo com.instana.agent.main.sender.Backend.cfg
+   Configurar archivo com.instana.agent.main.sender.Backend.cfg, reemplazar los valores para los parametros host, proxy.host, key y otro que requiera su entorno.
 
    ```
-   nano /opt/instana/agent/etc/instana/com.instana.agent.main.sender.Backend.cfg
+   Linux: /opt/instana/agent/etc/instana/com.instana.agent.main.sender.Backend.cfg
+   Windows: C:\Program Files\Instana\instana-agent\etc\instana\com.instana.agent.main.sender.Backend.cfg
    ```
    
    ![image](https://github.com/user-attachments/assets/5089b0b7-f9fb-4d9a-b971-b9486d3714fa)
