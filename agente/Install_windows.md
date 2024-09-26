@@ -13,7 +13,7 @@ Instana soporta los siguientes sistemas operativos:
 
 Nota: Confirmar los sistemas operativos soportado en la documentación oficial (https://www.ibm.com/docs/en/instana-observability/current?topic=agents-installing-windows#supported-operating-systems-and-platform-architectures)
 
-En la pantalla de inicio del tenant de Instana, hacer clic en "Deploy agent"
+En la pantalla de inicio del tenant de Instana, hacer clic en "**Deploy agent**"
 
 ![image](https://github.com/user-attachments/assets/8a0c2b7b-2956-44ee-aa79-81195d4c3a5b)
 
