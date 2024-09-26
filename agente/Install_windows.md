@@ -27,7 +27,8 @@ Se mostrara la siguiente ventana, donde:
 
 2 - Linea de comando para la instalación desatendida del agente de Instana
 
-**Importante: Extraer el link y la linea de comando de su tenant de Instana**
+> [!IMPORTANT]
+>**Extraer el link y la linea de comando de su tenant de Instana**
 
 ![image](https://github.com/user-attachments/assets/f62f0d3b-a329-43d8-ba1a-9636f23bc487)
 
