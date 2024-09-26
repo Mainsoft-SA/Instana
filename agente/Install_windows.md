@@ -17,7 +17,7 @@ En la pantalla de inicio del tenant de Instana, hacer clic en "**Deploy agent**"
 
 ![image](https://github.com/user-attachments/assets/8a0c2b7b-2956-44ee-aa79-81195d4c3a5b)
 
-Filtrar bajo la palabra Windows
+Filtrar bajo la palabra **"Windows"**
 
 ![image](https://github.com/user-attachments/assets/59b45a62-2299-4c76-93dc-0fe009a42e47)
 
