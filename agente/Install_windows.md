@@ -43,6 +43,8 @@ Luego validar en la consola de Instana:
 
 ![image](https://github.com/user-attachments/assets/1a980a1e-c921-4f17-9674-0dd02f86203c)
 
+Se recomienda continuar con la configuración de Zonas y Tags:
+https://github.com/Mainsoft-SA/Instana/blob/main/agente/zona%26tag.md
 
 ## Iniciar y detener agente
 
