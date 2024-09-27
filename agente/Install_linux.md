@@ -1,20 +1,11 @@
-# Instalación agente en servidor Linux
+# Instalación agente en servidor Linux derivados de Red Hat
 
-Instana soporta los siguientes sistemas operativos:
-- Ubuntu Linux 14.04 (trusty)
-- Ubuntu Linux 16.04 (xenial)
-- Ubuntu Linux 18.04 (beaver)
-- Ubuntu Linux 20.04 (focal)
-- Ubuntu Linux 22.04 (jammy)
+## Compatibilidad
+Instana soporta los siguientes sistemas operativos derivados de Red Hat:
 - CentOS 6 
 - CentOS 7
 - CentOS 8
 - CentOS 9
-- Debian 9 (stretch)
-- Debian 10 (buster)
-- Debian 11 (bullseye)
-- SUSE Linux Enterprise Server (SLES) 12
-- SUSE Linux Enterprise Server (SLES) 15
 - Red Hat Enterprise Linux (RHEL) 6
 - Red Hat Enterprise Linux (RHEL) 7 
 - Red Hat Enterprise Linux (RHEL) 8
@@ -22,51 +13,60 @@ Instana soporta los siguientes sistemas operativos:
 - Oracle Enterprise Linux 7
 - Oracle Enterprise Linux 8
 - Oracle Enterprise Linux 9
-- Amazon Linux 1
-- Amazon Linux 2
-- Alma Linux 8
-- Alma Linux 9
-- z/Linux, Linux on Z (s390x, 64 bit)
-- z/OS (OS/390) - (s390x) - Supported WebSphere and Liberty tracing
-- Kylin Linux Advanced Server v10 (x86_64 & aarch64)
 
 > [!NOTE]
-> Sistemas operativos soportado en la **[documentación oficial](https://www.ibm.com/docs/en/instana-observability/current?topic=agents-installing-linux#checking-that-you-have-a-supported-operating-system)**
+> Confirmar otros sistemas operativos soportados en la **[documentación oficial](https://www.ibm.com/docs/en/instana-observability/current?topic=agents-installing-linux#checking-that-you-have-a-supported-operating-system)**
 
+## Requisito
+
+> [!TIP]
+>**Verificar conectividad**
+
+>Buscar la URL del backend de Instana, puerto y download_key, estos datos se usaran más adelante:
+>
+>![image](https://github.com/user-attachments/assets/11df3b33-0f4a-42cf-b94f-a0c391432689)
+
+>```
+>telnet ingress-orange-saas.instana.io 443
+>curl -v telnet://ingress-orange-saas.instana.io:443
+>curl -v -x proxy:port -U "username:password" telnet://ingress-orange-saas.instana.io:443
+>```
+
+## Descarga de agente
 En la pantalla de inicio del tenant de Instana, hacer clic en "**Deploy agent**"
 
 ![image](https://github.com/user-attachments/assets/8a0c2b7b-2956-44ee-aa79-81195d4c3a5b)
 
-Filtrar bajo la palabra **"Windows"** y seleccionar:
+Filtrar bajo la palabra **"Linux"** y seleccionar:
 
-![image](https://github.com/user-attachments/assets/59b45a62-2299-4c76-93dc-0fe009a42e47)
+![image](https://github.com/user-attachments/assets/875dfad5-884d-4688-b177-151238109c6c)
 
-Se mostrara la siguiente ventana, donde:
 
-1: Link de descargar el instalador del agente de Instana
+Se mostrara la siguiente ventana, seleccionar el modo y la arquitectura requerida, luego descargar el agente
 
-2: Linea de comando para la instalación desatendida del agente de Instana
-
-> [!IMPORTANT]
->**Extraer el link de descarga y la linea de comando de su propio tenant de Instana**
-
-![image](https://github.com/user-attachments/assets/c325cb5d-5a7d-4708-8257-2714a858a0ca)
-
-> [!TIP]
->**Verificar conectividad, usando la URL de la linea de comando**
-```
-telnet ingress-orange-saas.instana.io 443
-curl -v telnet://ingress-orange-saas.instana.io:443
-curl -v -x proxy:port -U "username:password" telnet://ingress-orange-saas.instana.io:443
-```
-
+![image](https://github.com/user-attachments/assets/cef31026-63ed-4f46-9b3e-9afed33a96fe)
 
 En la ubicación donde se descargo o copio el instalador, ejecutar la linea de comando:
 
 > [!TIP]
->**Ejecutar comando con permisos de administrador**
+>**Ejecutar comando con permisos sudo o root**
+```
+rpm -ivh instana-agent-dynamic.x86_64.rpm
+```
+![image](https://github.com/user-attachments/assets/2d9dc27f-5e61-47d3-b803-c212af8d52ac)
 
-![image](https://github.com/user-attachments/assets/a2fdcfdd-7deb-4538-ad71-939acfe2eeea)
+Completar los datos para la conexión del agente de Instana hacia el backend
+```
+cd /opt/instana/agent/etc/instana
+vi com.instana.agent.main.sender.Backend.cfg
+```
+![image](https://github.com/user-attachments/assets/14f5be59-8aa0-426c-964a-6d684f61ee7f)
+
+Guardar y reiniciar el agente de Instana
+```
+systemctl restart instana-agent.service
+service instana-agent restart
+```
 
 > [!NOTE]
 > En caso se tenga un entorno con servidor proxy, realizar la **[configuración de proxy en agente Instana](https://github.com/Mainsoft-SA/Instana/blob/main/proxy_agent/readme.md#3-configuraci%C3%B3n-de-proxy-en-agente-instana)**
@@ -88,17 +88,20 @@ Luego validar en la consola de Instana:
 
 Iniciar agente
 ```
-INSTANA_AGENT_FOLDER/bin/start
+systemctl start instana-agent.service
+service instana-agent start
 ```
 
 Detener agente
 ```
-INSTANA_AGENT_FOLDER/bin/stop
+systemctl stop instana-agent.service
+service instana-agent stop
 ```
 
 Estado de agente
 ```
-INSTANA_AGENT_FOLDER/bin/status
+systemctl status instana-agent.service
+service instana-agent status
 ```
 
 ## Desinstalar agente
@@ -107,12 +110,12 @@ Derivados de Debian
 ```
 apt list --installed | grep instana-agent
 sudo apt-get purge <package_name>
-rm -rf /opt/instana/agent
+rm -rf /opt/instana/
 ```
 
 Derivados de Red Hat
 ```
 yum list installed | grep instana-agent
 sudo yum remove <package_name>
-rm -rf /opt/instana/agent
+rm -rf /opt/instana/
 ```
