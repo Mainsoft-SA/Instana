@@ -63,8 +63,6 @@ En la ubicación donde se descargo o copio el instalador, ejecutar la linea de c
 
 Luego validar en la consola de Instana:
 
-![image](https://github.com/user-attachments/assets/f9eba09c-1532-41f5-97fe-bd584b871949)
-
 ![image](https://github.com/user-attachments/assets/1a980a1e-c921-4f17-9674-0dd02f86203c)
 
 
