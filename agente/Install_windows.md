@@ -65,7 +65,7 @@ Luego validar en la consola de Instana:
 > ![image](https://github.com/user-attachments/assets/d4265a10-4698-4c0a-aea9-dd206392193f)
 
 > [!TIP]
-> Para un mejor reconocimiento e instrumentación de los servicios detectados en el servidor, se sugiere el reinicio de los servicio y/o servidor.
+> Para un mejor reconocimiento e instrumentación de los servicios detectados en el servidor, se sugiere el reinicio de los servicios y/o servidor.
 
 ## Iniciar y detener agente de Instana
 
