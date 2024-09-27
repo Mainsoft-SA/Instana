@@ -32,7 +32,7 @@ Instana soporta los siguientes sistemas operativos derivados de Red Hat:
 >curl -v -x proxy:port -U "username:password" telnet://ingress-orange-saas.instana.io:443
 >```
 
-## Descarga de agente
+## Descargar e instalar de agente
 En la pantalla de inicio del tenant de Instana, hacer clic en "**Deploy agent**"
 
 ![image](https://github.com/user-attachments/assets/8a0c2b7b-2956-44ee-aa79-81195d4c3a5b)
