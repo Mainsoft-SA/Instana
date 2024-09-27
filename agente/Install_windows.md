@@ -65,7 +65,7 @@ Luego validar en la consola de Instana:
 ![image](https://github.com/user-attachments/assets/d4265a10-4698-4c0a-aea9-dd206392193f)
 
 
-## Iniciar y detener agente
+## Iniciar y detener agente de Instana
 
 Iniciar servicio
 ```
@@ -76,5 +76,11 @@ Detener servicio
 ```
 net stop instana-agent-service
 ```
+
+## Desinstalar agente de Instana
+
+Desde Panel de control -> Agregar o quitar programas se puede desinstalar el agente de Instana
+
+![image](https://github.com/user-attachments/assets/fad2524a-1287-43d0-937e-35d71b16dbde)
 
 
