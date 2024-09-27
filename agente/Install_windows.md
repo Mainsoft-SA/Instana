@@ -1,5 +1,6 @@
 # Instalación agente en servidor Windows
 
+## Compatibilidad
 Instana soporta los siguientes sistemas operativos:
 - Windows Server 2022
 - Windows Server 2019
@@ -13,6 +14,23 @@ Instana soporta los siguientes sistemas operativos:
 
 > [!NOTE]
 > Sistemas operativos soportado en la **[documentación oficial](https://www.ibm.com/docs/en/instana-observability/current?topic=agents-installing-windows#supported-operating-systems-and-platform-architectures)**
+
+## Requisito
+
+> [!TIP]
+>**Verificar conectividad**
+
+>Buscar la URL del backend de Instana, puerto y download_key, estos datos se usaran más adelante:
+>
+>![image](https://github.com/user-attachments/assets/11df3b33-0f4a-42cf-b94f-a0c391432689)
+
+>```
+>telnet ingress-orange-saas.instana.io 443
+>curl -v telnet://ingress-orange-saas.instana.io:443
+>curl -v -x proxy:port -U "username:password" telnet://ingress-orange-saas.instana.io:443
+>```
+
+## Descargar e instalar de agente
 
 En la pantalla de inicio del tenant de Instana, hacer clic en "**Deploy agent**"
 
@@ -32,15 +50,6 @@ Se mostrara la siguiente ventana, donde:
 >**Extraer el link de descarga y la linea de comando de su propio tenant de Instana**
 
 ![image](https://github.com/user-attachments/assets/c325cb5d-5a7d-4708-8257-2714a858a0ca)
-
-> [!TIP]
->**Verificar conectividad, usando la URL de la linea de comando**
-```
-telnet ingress-orange-saas.instana.io 443
-curl -v telnet://ingress-orange-saas.instana.io:443
-curl -v -x proxy:port -U "username:password" telnet://ingress-orange-saas.instana.io:443
-```
-
 
 En la ubicación donde se descargo o copio el instalador, ejecutar la linea de comando:
 
