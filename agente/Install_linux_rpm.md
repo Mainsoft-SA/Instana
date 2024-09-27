@@ -108,13 +108,6 @@ service instana-agent status
 
 ## Desinstalar agente
 
-Derivados de Debian
-```
-apt list --installed | grep instana-agent
-sudo apt-get purge <package_name>
-rm -rf /opt/instana/
-```
-
 Derivados de Red Hat
 ```
 yum list installed | grep instana-agent
