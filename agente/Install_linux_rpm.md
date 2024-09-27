@@ -73,9 +73,8 @@ service instana-agent restart
 
 Luego validar en la consola de Instana:
 
-![image](https://github.com/user-attachments/assets/f9eba09c-1532-41f5-97fe-bd584b871949)
+![image](https://github.com/user-attachments/assets/3de7e395-573f-4368-b8c2-d88a228771fc)
 
-![image](https://github.com/user-attachments/assets/1a980a1e-c921-4f17-9674-0dd02f86203c)
 
 
 > [!TIP]
@@ -84,7 +83,7 @@ Luego validar en la consola de Instana:
 > ![image](https://github.com/user-attachments/assets/d4265a10-4698-4c0a-aea9-dd206392193f)
 
 > [!TIP]
-> Para un mejor reconocimiento e instrumentación de los servicios detectados en el servidor, se sugiere el reinicio de los servicio y/o servidor.
+> Para un mejor reconocimiento e instrumentación de los servicios detectados en el servidor, se sugiere el reinicio de los servicios y/o servidor.
 
 ## Iniciar, detener y estado de agente
 
