@@ -61,8 +61,8 @@ Luego validar en la consola de Instana:
 
 > [!TIP]
 > Para una mejor gestión de los recursos a monitorear, se recomienda continuar con la configuración de **[Zonas y Tags](https://github.com/Mainsoft-SA/Instana/blob/main/agente/zona%26tag.md)**
-
-![image](https://github.com/user-attachments/assets/d4265a10-4698-4c0a-aea9-dd206392193f)
+> 
+> ![image](https://github.com/user-attachments/assets/d4265a10-4698-4c0a-aea9-dd206392193f)
 
 
 ## Iniciar y detener agente de Instana
