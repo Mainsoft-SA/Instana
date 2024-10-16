@@ -27,7 +27,7 @@ com.instana.plugin.host:
     - 'Ambiente=PROD'
     - 'Rol=FrontEnd'
     - 'Gerencia=Operaciones'
-    - 'Team_app=Desarrillo'
+    - 'Team_app=Desarrollo'
     - 'Team_infra=Infraestructura'
 ```
 
