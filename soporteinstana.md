@@ -2,8 +2,9 @@
 
 Crear un grupo con permisos necesarios para el Soporte de Instana
 
-Settings -> Team Settings -> Groups
+Settings -> Team Settings -> Groups -> New group
 
+![image](https://github.com/user-attachments/assets/f90ebc77-8be2-4081-ae90-7f6de7f8bd54)
 ![image](https://github.com/user-attachments/assets/75f875d7-2160-4bc6-8edd-2ccb13c4f045)
 ![image](https://github.com/user-attachments/assets/6d24fe4d-61c4-463b-b000-41d30a9c4908)
 ![image](https://github.com/user-attachments/assets/b9501eb7-9da8-4cdb-8f2a-1ffc99320e8f)
