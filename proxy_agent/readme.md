@@ -22,7 +22,10 @@
 
    ![image](https://github.com/user-attachments/assets/bb983382-4f2c-415a-8349-e978931483f1)
 
-
+   Reiniciar Squid
+   ```
+   systemctl restart squid
+   ```
 
 ## 2. Instalación de agente instana
 
