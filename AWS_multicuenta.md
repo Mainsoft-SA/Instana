@@ -1,4 +1,4 @@
-# **Monitoreo de multiples cuenta de AWS con Instana usando roles**
+# **Monitoreo de multiples cuentas de AWS con Instana usando roles**
 **AWS Security Token Service (AWS STS)**
 
 1. Arquitectura
