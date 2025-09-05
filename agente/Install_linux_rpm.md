@@ -113,3 +113,10 @@ yum list installed | grep instana-agent
 sudo yum remove <package_name>
 rm -rf /opt/instana/
 ```
+
+Derivados de Debian
+```
+apt list --installed | grep instana-agent
+sudo apt-get purge <package_name>
+rm -rf /opt/instana/
+```
