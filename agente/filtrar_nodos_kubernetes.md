@@ -44,5 +44,9 @@ kubectl label nodes itzvsi2-0g06korj itzvsi3-0g06korj instana-monitored-
 Para validar:
 
 ```
+kubectl get nodes
 watch kubectl get pods -n instana-agent -o wide
 ```
+
+<img width="1238" height="212" alt="image" src="https://github.com/user-attachments/assets/fd4a9631-2e67-4921-bcfa-3bec45e33951" />
+
