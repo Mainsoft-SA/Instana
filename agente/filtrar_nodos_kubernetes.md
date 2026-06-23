@@ -1,6 +1,6 @@
 # Filtrar nodos en kubernetes
 
-Preparar archivo values
+Preparar archivo instana-agent-values.yaml
 
 ```
 cat > instana-agent-values.yaml << YAML
